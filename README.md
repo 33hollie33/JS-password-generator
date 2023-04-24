@@ -23,6 +23,7 @@ Please refer to the image below of the finished password generator:
 ![Screenshot of generator](/Develop/images/passwordgeneratorimage.png)
 
 Please refer to the link down below:
+https://33hollie33.github.io/JS-password-generator/
 
 
 
