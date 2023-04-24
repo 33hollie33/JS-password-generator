@@ -17,9 +17,6 @@ Issues within the Javascript and how it was solved:
 
 5. A for loop was used within this code, to enable the user to have access to all the different possible numbers, special chracters, uppercase and lowercase letters. By using a for loop, it enables the web to use the piece of code over and over again. 
 
-6. An array
-
-7. Used a validator 
 
 
 

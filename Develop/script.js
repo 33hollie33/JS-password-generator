@@ -24,16 +24,17 @@ function generatePassword() {
   //Prompt the user on how many characters they would want in the generated password by using an if statement  
   let passwordLength = window.prompt("How many chracters you would like your password to contain?");
   if (passwordLength < 8 || passwordLength > 128) {
+    console.log(passwordLength)
     window.alert("Password needs to be between 8 and 128 chracters");
     // Return enables the user to go back to the start
     return;
   }
   // Prompt user on what they want to encorporate within their passwords
-  let passworduppercase = window.confirm("Click OK to confirm the use of Uppercase letters in password");
-  let passwordlowercase = window.confirm("Click OK to confirm the use of Lowercase letters in password");
+  let passworduppercase = window.confirm("Click OK to confirm the use of uppercase letters in password");
+  let passwordlowercase = window.confirm("Click OK to confirm the use of lowercase letters in password");
   let passwordnumbers = window.confirm("Click OK to confirm the use of numbers in password");
   let passwordspecial = window.confirm("Click OK to confirm the use of special chracters in password");
-
+  console.log(passworduppercase, passwordlowercase, passwordnumbers, passwordspecial)
   // used an if statement to create an error on the page if the user does not click OK
   if (passworduppercase == false && passwordlowercase == false && passwordnumbers == false && passwordspecial == false) {
     window.alert("You must select at least one character type")
@@ -42,7 +43,7 @@ function generatePassword() {
   }
 
   // Use a for loop so the code can be re-used over and over again
-  
+
   let password = "";
 
   for (let i = 0; i < passwordLength; i++) {
@@ -50,8 +51,8 @@ function generatePassword() {
     if (passworduppercase == true) {
       var randomNumber = Math.floor(Math.random() * uppercase.length);
       var uppercaseLetter = uppercase[randomNumber];
+      console.log(randomNumber, uppercaseLetter)
       password += uppercaseLetter;
-
       if (password.length == passwordLength) {
         break;
       }
@@ -60,15 +61,7 @@ function generatePassword() {
     if (passwordlowercase == true) {
       var randomNumber = Math.floor(Math.random() * lowercase.length);
       var lowerCaseLetter = lowercase[randomNumber];
-      password += lowerCaseLetter;
-      if (password.length == passwordLength) {
-        break;
-      }
-    }
-
-    if (passwordlowercase == true) {
-      var randomNumber = Math.floor(Math.random() * lowercase.length);
-      var lowerCaseLetter = lowercase[randomNumber];
+      console.log(randomNumber, lowerCaseLetter)
       password += lowerCaseLetter;
       if (password.length == passwordLength) {
         break;
@@ -78,6 +71,7 @@ function generatePassword() {
     if (passwordnumbers == true) {
       var randomNumber = Math.floor(Math.random() * numbers.length);
       var number = numbers[randomNumber];
+      console.log(randomNumber, number)
       password += number;
       if (password.length == passwordLength) {
         break;
@@ -87,6 +81,7 @@ function generatePassword() {
     if (passwordspecial == true) {
       var randomNumber = Math.floor(Math.random() * special.length);
       var specialChar = special[randomNumber];
+      console.log(randomNumber, specialChar)
       password += specialChar;
       if (password.length == passwordLength) {
         break;
@@ -114,7 +109,6 @@ function generatePassword() {
 }
 
 //Added a validator
-
 function passwordContainsUppercase(password) {
   for (let i = 0; i < password.length; i++) {
     let character = password.charAt(i);
@@ -155,7 +149,5 @@ function passwordContainsSpecialCharacter(password) {
   }
   return false;
 }
-
 // Add event listener to generate button. This was code already added
-
 generateBtn.addEventListener("click", writePassword);
