@@ -13,14 +13,14 @@ Issues within the Javascript and how it was solved:
 
 2. Variables were created for the password. Variables can store primitaive data types. For this, I specifically used a string variable as it can store numbers and letters of data. The variable consisted of: uppercase, lowercase, numbers and special characters. I completed this by using the 'const' statement. 
 
-3. To enable the password to be generated a function tag was created to enable the password to be generated. The function statement within Javascript enables the piece of code that has been written to be re-used over and over again. It also improves code readability for other developers. This keeps the code clean and conscise and easier to read for other developers. The console.log statememnt was added after the function to output a message to the web console. 
+3. To enable the password to be generated a function statement was created to enable the password to be generated. The function statement within Javascript enables the piece of code that has been written to be re-used over and over again. It also improves code readability for other developers. This keeps the code clean and conscise and easier to read for other developers. The console.log statememnt was added after the function to output a message to the web console. 
 
 5. A for loop was used within this code, to enable the user to have access to all the different possible numbers, special chracters, uppercase and lowercase letters. By using a for loop, it enables the web to use the piece of code over and over again. Within the loop, the statement console.log was added to enable access to the stored variable.
 
 6. After the for loop was created, validator code was encorporated to ensure correct user output. 
 
 Please refer to the image below of the finished password generator:
-![Screenshot of generator] ([passwordgeneratorimage.png])
+![Screenshot of generator](passwordgeneratorimg.png)
 
 Please refer to the link down below:
 
