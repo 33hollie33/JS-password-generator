@@ -20,7 +20,7 @@ Issues within the Javascript and how it was solved:
 6. After the for loop was created, validator code was encorporated to ensure correct user output. 
 
 Please refer to the image below of the finished password generator:
-![Screenshot of generator](passwordgeneratorimg.png)
+![Screenshot of generator](/Develop/images/passwordgeneratorimage.png)
 
 Please refer to the link down below:
 
