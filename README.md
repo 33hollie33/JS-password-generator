@@ -9,19 +9,15 @@ This challenge presented with HTML and CSS which was completed. Therefore no cha
 The password has certain criterias in which the user could choose for example: uppercase and lowercase letters, numbers and special characters. I used the oswap tool to guide in which special chracters should be included within the criteria. Link attached here: https://www.owasp.org/index.php/Password_special_characters. In addition to this, the other criteria for the generated password were the length of password should have a minimum of 8 characters and no more than 128 characters. Once the user has chosen a criteria, they click an application 'Generate Password'. This is when they should be presented with a password that fits the criteria they have requested. 
 
 Issues within the Javascript and how it was solved:
-1. To prompt the user on the specific characters, firstly the task was to break down what questions to use. The amount of chracters is the first question for the user to decide on. This was created by using a 'let' statement and an 'if' statement. Next, the 'let' statement was used for the user to decide if they wanted uppercase, lowecase, numbers or special characters within their passwords by using the 'let' statement and the window.confirm statement. A window.alert statement was used if the user did not confirm 'OK', to enable the user to create a safe password.
+1. To prompt the user on the specific characters, firstly the task was to break down what questions to use. The amount of chracters is the first question for the user to decide on. This was created by using a 'let' statement and an 'if' statement. Next, the 'let' statement was used for the user to decide if they wanted uppercase, lowecase, numbers or special characters within their passwords by using the 'let' statement and the window.confirm statement. A window.alert statement was used if the user did not confirm 'OK', to enable the user to create a safe password. The statement console.log was added afterwards. 
 
-2. Variables were created for the password. Variables can store primitaive data types. For this, I specifically used a string variable as it can store numbers and letters of data. The variable consisted of: uppercase, lowercase, numbers and special characters. I completed this by using the 'const' statement.
+2. Variables were created for the password. Variables can store primitaive data types. For this, I specifically used a string variable as it can store numbers and letters of data. The variable consisted of: uppercase, lowercase, numbers and special characters. I completed this by using the 'const' statement. 
 
-3. To enable the password to be generated a function tag was created to enable the password to be generated. The function statement within Javascript enables the piece of code that has been written to be re-used over and over again. This keeps the code clean and conscise and easier to read for other developers. The console.log statememnt was added after the function to output a message to the web console. 
+3. To enable the password to be generated a function tag was created to enable the password to be generated. The function statement within Javascript enables the piece of code that has been written to be re-used over and over again. It also improves code readability for other developers. This keeps the code clean and conscise and easier to read for other developers. The console.log statememnt was added after the function to output a message to the web console. 
 
-5. A for loop was used within this code, to enable the user to have access to all the different possible numbers, special chracters, uppercase and lowercase letters. By using a for loop, it enables the web to use the piece of code over and over again. 
+5. A for loop was used within this code, to enable the user to have access to all the different possible numbers, special chracters, uppercase and lowercase letters. By using a for loop, it enables the web to use the piece of code over and over again. Within the loop, the statement console.log was added to enable access to the stored variable.
 
-
-
-
-
-
+6. After the for loop was created, validator code was encorporated to ensure correct user output. 
 
 Please refer to the image below of the finished password generator:
 

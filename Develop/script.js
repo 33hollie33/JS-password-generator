@@ -5,7 +5,7 @@ const uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "
 const lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 const special = ["!", "@", "#", "$", "%", "&", "(", ")", "*", "+", "-", ".", "/", ":", ";", "<", "=", ">", "?", "[", "]", "^", "_", "{", "|", "}", "~"];
-//Followed the *** guide to include all the special chracters that can be included within the generated password 
+// Followed the owasp guide to include all the special chracters that can be included within the generated password 
 
 
 // The code that was provided beforehand 
@@ -42,7 +42,7 @@ function generatePassword() {
     return;
   }
 
-  // Use a for loop so the code can be re-used over and over again
+  // Use a for loop so the code can be re-used over and over again. Added the statement console.log to access the value stored in a variable
 
   let password = "";
 
@@ -108,7 +108,7 @@ function generatePassword() {
 
 }
 
-//Added a validator
+//Added a validator 
 function passwordContainsUppercase(password) {
   for (let i = 0; i < password.length; i++) {
     let character = password.charAt(i);
